@@ -1,0 +1,552 @@
+@import url('https://fonts.googleapis.com/css?family=Alegreya+Sans+SC|Bree+Serif|Carter+One|Noticia+Text|Permanent+Marker|Roboto|Signika|Special+Elite&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Permanent+Marker|Special+Elite&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body{
+    font-family: 'Alegreya Sans SC', sans-serif;
+}
+
+#wrapper{
+    position: relative;
+    height: auto;
+}
+
+h1,h2{
+    font-family: 'Permanent Marker', cursive;
+}
+
+header{
+    background-color: rgba(255, 255, 0, .55);
+    width: 100%;
+    position: fixed;
+    font-family: 'Permanent Marker', cursive;
+    z-index: 100;
+}
+
+header ul li a,a:hover {
+    text-decoration: none;
+    color: rgba(55, 81, 103, .80);
+}
+
+header ul li a:hover{
+    color: white;
+}
+
+header img{
+    display: inline-block;
+    width: 16%;
+    margin: 7px 10px 7px 20px;
+}
+
+header ul{
+    float: right;
+    margin: 13px;
+}
+
+header ul li{
+    color: rgba(55, 81, 103, .80);
+    list-style: none;
+    display: inline-block;
+    font-size: 18px;
+    margin: 17px 5px;
+    padding: 10px 10px;
+}
+
+header ul li:hover{
+    background-color:rgba(35, 24, 21, .80);
+    color: white;
+}
+
+/* ↓↓　ここからスクロールコード　↓↓ */
+html,body,body > div,main {
+    height: 100%;
+}
+
+.fixed-bg {
+    min-height: 100%;
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.fixed-bg.img1 {
+  background-image: url("../img/TOP.png");
+}
+
+.fixed-bg.img2 {
+  background-image: url("../img/lifestyle-top.png");
+}
+.fixed-bg.img3 {
+  background-image: url("../img/living.png");
+}
+.fixed-bg.img4 {
+  background-image: url("../img/Moving.png");
+}
+  
+.scrolling-bg {
+    min-height: 100%;
+}
+
+.cd-container{
+    padding: 110px 70px 70px 70px;
+    box-sizing: border-box;
+}
+/* ↑↑　ここまでスクロールコード　↑↑ */
+
+.img-title{
+    display: inline-block;
+    color: white;
+    margin: 340px 80px;
+}
+
+.img-title h1{
+    font-size: 60px;
+}
+
+.contents1{
+    background-color: #375167;
+    color: white;
+    padding: 80px;
+}
+
+#c1{
+    width: 800px;
+    font-size: 18px;
+    word-spacing: 3px;
+    letter-spacing: 0.8px;
+    margin: 0 auto;
+}
+
+#album1 ul li .click{
+    width: 2%;
+    position: relative;
+    top: 10px;
+    left: -26px;
+}
+
+/* ↓↓↓　ここから album1 ↓↓↓ */
+/* エリア設定 */
+#album1 {
+    position: relative;
+    margin: 0 auto;
+    padding: 40px 0px 0px 0px;
+}
+#album1 ul {
+    background: url(img/bg_title.gif) no-repeat 0 187px;
+}
+
+#album1 ul li {
+    width: 100%;
+    margin: 30px 0px 0px -30px;
+    list-style: none;
+}
+
+/* 挙動設定 */
+/* サムネイル画像設定 */
+#album1 ul li a {  
+display: block;
+width: 150px;
+height: 70px;
+border: 2px solid #FFFFFF;
+outline: none;
+}
+
+#album1 ul li a:hover {
+    border: 5px solid #fff87b;
+}
+
+#album1 ul li a:active
+,#album1 ul li a:focus{ 
+    border: 5px solid #CC4949;
+}
+
+/* メイン画像設定 */
+#album1 ul li a em,
+#album1 ul li a .title {
+    display: none;
+}
+
+#album1 ul li a:active em,
+#album1 ul li a:focus em {
+    position: absolute;
+    top: 30px;
+    left: 280px;
+    display: block;
+    width: 900px;
+    height: 580px;
+    border: 8px #E7E7E7 solid;
+}
+
+#album1 ul li a em img{
+    display: block;  
+    width: 100%;
+    height: 100%;
+}
+
+/* タイトル設定 */
+#album1 ul li a:active .title,
+#album1 ul li a:focus  .title{
+    position: absolute;
+    top: 50px;
+    left: 320px;
+    display: block;
+    color: whitesmoke;
+    text-shadow: 1.5px 1.5px 0 #646464;
+    z-index: 100;
+}
+
+span{
+    color: #fff87b;
+    font-size: 18px;
+    font-weight: bold;
+    text-shadow: 1.5px 1.5px 0 #646464;
+    margin: 2px 0px;
+}
+
+/* button{
+    display: inline;
+} */
+
+.buttom {
+    display: inline;
+}
+
+.btn-gradation {
+    display: inline-block;
+    text-align: left;
+    background-image: linear-gradient(#eaeaea 0%, #c6c6c6 100%);
+    box-shadow: inset 0 2px 0 rgba(255,255,255,0.5), 0 2px 2px rgba(0, 0, 0, 0.19);
+    color: #a5a5a5;;
+    font-size: 11px;
+    text-decoration: none;
+    font-weight: bold;
+    text-shadow: 1px 1px 1px rgba(255, 255, 255, 1);
+    margin: 3.5px 2px;
+    padding: 5px 5px;
+    border-radius: 4px;
+  }
+  
+  .btn-gradation:hover {
+    opacity: 0.8;
+  }
+
+/* 各サムネイル画像読込み設定*/
+#a1-photo01 {background:url(../img/logo-Work.png);}
+#a1-photo02 {background:url(../img/logo-Family.png);}
+#a1-photo03 {background:url(../img/logo-Friends.png);}
+#a1-photo04 {background:url(../img/logo-Yourself.png);}
+/* ↑↑↑　ここまで album1 ↑↑↑ */
+
+#album2 ul li .click{
+    width: 2%;
+    position: relative;
+    top: 10px;
+    left: -26px;
+}
+
+/* ↓↓↓　ここから album2 ↓↓↓ */
+/* エリア設定 */
+#album2 {
+    position: relative;
+    margin: 0 auto;
+    padding: 0px 0px 0px 0px;
+  }
+
+  #album2 ul {
+    background: url(img/bg_title.gif) no-repeat 0 187px;
+  }
+
+  #album2 ul li {
+    margin: 5px 5px 0px -30px;
+    list-style: none;
+  }
+  
+  /* 挙動設定 */
+  /* サムネイル画像設定 */
+  #album2 ul li a{  
+    display: block;
+    width: 150px;
+    height: 70px;
+    border: 2px solid #FFFFFF;
+    outline: none;
+  }
+
+#album2 ul li a:hover {
+    border: 5px solid #fff87b;
+  }
+
+#album2 ul li a:active
+,#album2 ul li a:focus{ 
+    border: 5px solid #CC4949;
+    outline: none;
+  }
+  
+  /* メイン画像設定 */
+#album2 ul li a .em1,.em2,
+#album2 ul li a .title {
+    display: none;
+  }
+
+#album2 ul li a:active .em1,
+#album2 ul li a:focus .em1 {
+    position: absolute;
+    top: 40px;
+    left: 280px;
+    display: block;
+    width: 480px;
+    height: 330px;
+    border: 8px #E7E7E7 solid;
+  }
+  
+#album2 ul li a:active .em2,
+#album2 ul li a:focus .em2 {
+    position: absolute;
+    top: 285px;
+    left: 700px;
+    display: block;
+    width: 480px;
+    height: 330px;
+    border: 8px #E7E7E7 solid;
+    }
+
+  #album2 ul li a em img{
+      width: 100%;
+      height: 100%;
+  }
+
+/* タイトル設定1 */
+#album2 ul li a:active .title,
+#album2 ul li a:focus  .title{
+    position: absolute;
+    top: 40px;
+    left: 780px;
+    display: block;
+    color: #646464;
+    width: 380px;
+    text-shadow: 1.5px 1.5px 0 whitesmoke;
+    z-index: 100;
+}
+
+/* タイトル設定2 */
+#album2 ul li a:active .title .h4-2,
+#album2 ul li a:focus  .title .h4-2{
+    position: absolute;
+    top: 370px;
+    left: -490px;
+    display: block;
+    color: #646464;
+    width: 380px;
+    text-shadow: 1.5px 1.5px 0 whitesmoke;
+    z-index: 100;
+}
+
+  /* 各サムネイル画像読込み設定*/
+  #a2-photo01 {background:url(../img/logo-paris.png);}
+  #a2-photo02 {background:url(../img/logo-Barcelona.png);}
+  #a2-photo03 {background:url(../img/logo-NewYork.png);}
+  #a2-photo04 {background:url(../img/logo-SanFran.png);}
+  #a2-photo05 {background:url(../img/logo-GoldCoast.png);}
+  #a2-photo06 {background:url(../img/logo-Tokyo.png);}
+/* ↑↑↑　ここまで album2 ↑↑↑ */
+
+#album3 ul li .click{
+    width: 2%;
+    position: relative;
+    top: 10px;
+    left: -26px;
+}
+
+/* ↓↓↓　ここから album3 ↓↓↓ */
+/* エリア設定 */
+#album3 {
+    position: relative;
+    margin: 0 auto;
+    padding: 50px 0px 0px 0px;
+  }
+
+  #album3 ul {
+    background: url(img/bg_title.gif) no-repeat 0 187px;
+  }
+
+  #album3 ul li {
+    margin: 50px -30px;
+    list-style: none;
+  }
+  
+  /* 挙動設定 */
+  /* サムネイル画像設定 */
+  #album3 ul li a {  
+    display: block;
+    width: 150px;
+    height: 70px;
+    border: 2px #FFFFFF solid;
+    outline: none;
+  }
+#album3 ul li a:hover {
+    border: 5px solid #fff87b;
+  }
+
+#album3 ul li a:active
+,#album3 ul li a:focus{ 
+    border: 5px solid #CC4949;v
+    outline: none;
+  }
+  
+  /* メイン画像設定 */
+#album3 ul li a .em1,.em2,.em3,.em4,
+#album3 ul li a .title {
+    display: none;
+  }
+
+#album3 ul li a:active .em1,
+#album3 ul li a:focus .em1 {
+    position: absolute;
+    top: 70px;
+    left: 250px;
+    display: block;
+    width: 700px;
+    height: 400px;
+    border: 8px #E7E7E7 solid;
+  }
+  
+  #album3 ul li a:active .em2,
+  #album3 ul li a:focus .em2 {
+    position: absolute;
+    top: 70px;
+    left: 1000px;
+    display: block;
+    width: 200px;
+    height: 150px;
+    border: 8px #E7E7E7 solid;
+    }
+
+  #album3 ul li a:active .em3,
+  #album3 ul li a:focus .em3 {
+    position: absolute;
+    top: 250px;
+    left: 1000px;
+    display: block;
+    width: 200px;
+    height: 150px;
+    border: 8px #E7E7E7 solid;
+    }
+
+    #album3 ul li a:active .em4,
+    #album3 ul li a:focus .em4 {
+    position: absolute;
+    top: 430px;
+    left: 1000px;
+    display: block;
+    width: 200px;
+    height: 150px;
+    border: 8px #E7E7E7 solid;
+      }
+
+  #album3 ul li a em img{
+      width: 100%;
+      height: 100%;
+  }
+
+/* タイトル設定 */
+#album3 ul li a:active .title,
+#album3 ul li a:focus  .title{
+    position: absolute;
+    top: 470px;
+    left: 270px;
+    display: block;
+    color: #646464;
+    width: 680px;
+    text-shadow: 1.5px 1.5px 0 whitesmoke;
+    z-index: 100;
+}
+
+/* 各サムネイル画像読込み設定*/
+  #a3-photo01 {background:url(../img/logo-airplane.png);}
+  #a3-photo02 {background:url(../img/logo-train.png);}
+  #a3-photo03 {background:url(../img/logo-bus.png);}
+/* ↑↑↑　ここまで album3 ↑↑↑ */
+
+.contents2{
+    height: 780px;
+}
+
+.contents4{
+    height: 1000px;
+}
+
+
+footer{
+    background-color: #375167;
+    color: white;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    padding: 10px;
+}
+
+footer img{
+    width: 18%;
+    padding: 55px 30px 30px 20px;
+    display: block;
+    float: left;
+}
+
+footer div ul{
+    float: left;
+    font-size: 14px;
+}
+
+footer div ul .li-1{
+    font-family: 'Permanent Marker', cursive;
+    list-style: none;
+    margin: 10px;
+}
+
+.li-2{
+    margin-bottom: 3px;
+    color: white;
+}
+
+.li-2 a {
+    text-decoration: none;
+    color: white;
+}
+
+.li-2:hover,
+.li-2 a:hover {
+    color: #fff87b;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+#copyright{
+    clear: both;
+    font-size: 12px;
+    padding: 20px 0px 5px 0px;
+    text-align: center;
+}
+
+#page_top{
+    width: 45px;
+    height: 45px;
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    padding: 15px 0px;
+    background: rgba(255, 255, 0, .55);
+  }
+  
+  #page_top a{
+    position: relative;
+    display: block;
+    color: rgba(55, 81, 103, .80);
+    font-weight: bold;
+    font-size: 18px;
+    text-align: center;
+    text-decoration: none;
+  }

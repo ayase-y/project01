@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css?family=Alegreya+Sans+SC|Bree+Serif|Carter+One|Noticia+Text|Permanent+Marker|Roboto|Signika|Special+Elite&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Permanent+Marker|Special+Elite&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    background: #375167;
+    font-family: 'Alegreya Sans SC', sans-serif;
+}
+
+img{
+    width: 200px;
+    display: block;
+    margin: 10px;
+}
+
+h1{
+    color: whitesmoke;
+    font-family: 'Permanent Marker', cursive;
+    font-size: 60px;
+    text-align: center;
+}
+
+h2{
+    color: whitesmoke;
+    text-align: center;
+    margin: 30px 0px -20px 0px;
+}
+
+form { 
+    max-width:700px; 
+    margin:50px auto;
+}
+
+.feedback-input {
+  color:white;
+  font-weight:500;
+  font-size: 18px;
+  border-radius: 5px;
+  line-height: 22px;
+  background-color: transparent;
+  border:2px solid #fff87b;
+  transition: all 0.3s;
+  padding: 13px;
+  margin-bottom: 15px;
+  width:100%;
+  box-sizing: border-box;
+  outline:0;
+}
+
+.feedback-input:focus {
+     border:2px solid #CC4949; 
+}
+
+textarea {
+  height: 150px;
+  line-height: 150%;
+  resize:vertical;
+}
+
+[type="submit"] {
+  width: 100%;
+  font-family: 'Alegreya Sans SC', sans-serif;
+  background:#fff87b;
+  border-radius:5px;
+  border: 0;
+  cursor:pointer;
+  color:white;
+  font-size:24px;
+  padding:10px 0px;
+  transition: all 0.2s;
+  margin-top:-4px;
+  font-weight:700;
+}
+
+[type="submit"]:hover,
+[type="reset"]:hover {
+     background: #CC4949;
+     font-family: 'Permanent Marker', cursive;
+     color: white;
+     font-weight: bold;
+    }
+
+[type="reset"] {
+    width: 30%;
+    font-family: 'Alegreya Sans SC', sans-serif;
+    background:#fff87b;
+    border-radius:5px;
+    border: 0;
+    cursor:pointer;
+    color:white;
+    font-size:24px;
+    display: block;
+    margin: 10px auto;
+    padding:10px 0px;
+    transition: all 0.2s;
+    font-weight:700;
+}
+
+#copyright{
+    font-size: 12px;
+    color: white;
+    padding: 20px 0px 5px 0px;
+    text-align: center;
+}
